@@ -3,125 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="JCM Enterprises - Quality Mwea Pishori, Komboka and Broken Rice. Wholesale and retail supply from Mwea Rice Mills Ltd.">
-<title>JCM Enterprises | Quality Rice. Reliable Supply. Trusted Service.</title>
-<link rel="icon" href="logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css">
+<title>JCM Enterprises | Quality Mwea Rice</title>
+<meta name="description" content="JCM Enterprises supplies quality Mwea Pishori, Komboka and Broken Rice from Mwea Rice Mills Ltd.">
+<style>
+:root{--green:#1f6b3a;--dark:#12452a;--brown:#8a542f;--cream:#fffaf1;--light:#eef7ee;--text:#26342b}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff}
+a{text-decoration:none;color:inherit}
+.top{background:var(--dark);color:#fff;padding:9px 5%;font-size:13px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+nav{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 2px 12px #0001;display:flex;align-items:center;justify-content:space-between;padding:13px 5%}
+.logo{font-weight:900;font-size:22px;color:var(--green)}.logo span{color:var(--brown)}
+.logo small{display:block;font-size:9px;letter-spacing:1.5px;color:var(--brown)}
+.links{display:flex;gap:22px;align-items:center;font-weight:700;font-size:14px}.links a:hover{color:var(--green)}
+.btn{display:inline-block;padding:13px 20px;border-radius:28px;background:var(--green);color:#fff;font-weight:800;border:2px solid var(--green)}
+.btn.alt{background:#fff;color:var(--green)}
+.hero{min-height:570px;padding:70px 5%;display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center;background:linear-gradient(120deg,#f7fbf4,#fffaf2)}
+.badge{display:inline-block;background:#e3f1df;color:var(--green);padding:9px 15px;border-radius:30px;font-weight:800}
+h1{font-size:clamp(42px,6vw,72px);line-height:.95;margin:18px 0;color:var(--green)}h1 span{color:var(--brown)}
+.hero h2{color:var(--brown);font-size:24px}.hero p{font-size:18px;line-height:1.7;max-width:650px}
+.heroimg{min-height:410px;border-radius:35px;background:linear-gradient(160deg,#d9ebcf,#f5e1c6);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.rice-art{font-size:150px;filter:drop-shadow(0 15px 12px #0002)}.seal{position:absolute;right:22px;top:22px;border:5px solid #c79a3b;background:#fff8d8;color:#76551e;width:105px;height:105px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;font-weight:900}
+.features{background:var(--brown);color:#fff;display:grid;grid-template-columns:repeat(4,1fr);padding:24px 5%;text-align:center}.features div{padding:8px;border-right:1px solid #ffffff55}.features div:last-child{border:0}.features b{display:block;margin-top:6px}
+section{padding:75px 5%} .title{text-align:center;margin-bottom:40px}.title h2{font-size:38px;margin:0;color:var(--green)}.title h2 span{color:var(--brown)}.title p{font-size:17px;color:#667}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;max-width:1150px;margin:auto}
+.card{background:#fff;border-radius:25px;overflow:hidden;box-shadow:0 8px 28px #163b2418;border:1px solid #e6eee6}.pic{height:230px;background:linear-gradient(145deg,#edf6e8,#f5e7d2);display:flex;align-items:center;justify-content:center}.pic .rice-art{font-size:100px}.cardbody{padding:25px}.card h3{color:var(--green);font-size:23px;margin:0 0 10px}.card p{line-height:1.6}.ticks{padding:0;list-style:none;line-height:1.9}.ticks li:before{content:"✓";color:var(--green);font-weight:bold;margin-right:8px}
+.about{background:var(--light)}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;max-width:1100px;margin:auto}.aboutbox{background:#fff;border-radius:25px;padding:35px;box-shadow:0 8px 25px #163b2412}.aboutbox h3{color:var(--green);font-size:29px}.aboutbox p{line-height:1.8}.why{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.why div{padding:18px;background:#fff;border-radius:15px}.why b{color:var(--green)}
+.banner{background:linear-gradient(100deg,var(--green),#2f7e49);color:#fff;text-align:center;padding:50px 5%}.banner h2{font-size:38px;margin:0 0 10px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1050px;margin:auto}.gallery div{height:190px;border-radius:20px;background:linear-gradient(145deg,#dcebd6,#f3dfc3);display:flex;align-items:center;justify-content:center;font-size:70px}
+.contact{background:#123e26;color:#fff}.contactgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;max-width:1100px;margin:auto}.contactbox{background:#ffffff10;padding:28px;border-radius:20px}.contactbox h3{color:#d9eecf}.contactbox p{line-height:1.8}.contact .btn{background:#2f914f;border-color:#2f914f}
+footer{background:#743f25;color:#fff;padding:25px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.links{display:none}.hero,.aboutgrid{grid-template-columns:1fr}.products,.gallery,.contactgrid{grid-template-columns:1fr}.features{grid-template-columns:2fr 2fr}.hero{padding-top:45px}.heroimg{min-height:300px}.why{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-<div class="topbar">
-  <div>📍 Mwea Rice Mills Ltd</div>
-  <div>📞 <a href="tel:+254729547726">0729 547 726</a> &nbsp;|&nbsp; <a href="tel:+254794853246">0794 853 246</a></div>
-  <div>✉️ <a href="mailto:mutemijames@gmail.com">mutemijames@gmail.com</a></div>
-</div>
-
-<header class="header">
-  <a class="brand" href="#home"><img src="logo.svg" alt="JCM Enterprises logo"></a>
-  <button class="menu" aria-label="Open menu">☰</button>
-  <nav>
-    <a href="#home">Home</a><a href="#about">About Us</a><a href="#products">Our Products</a>
-    <a href="#gallery">Gallery</a><a href="#contact">Contact</a>
-  </nav>
-  <a class="btn whatsapp" href="https://wa.me/254729547726?text=Hello%20JCM%20Enterprises%2C%20I%20would%20like%20to%20order%20rice." target="_blank">💬 Order on WhatsApp</a>
-</header>
-
-<main>
-<section id="home" class="hero">
-  <div class="hero-copy">
-    <span class="eyebrow">PREMIUM MWEA RICE</span>
-    <h1>Quality Rice.<br><span>Reliable Supply.</span><br>Trusted Service.</h1>
-    <p>Premium Mwea Pishori, Komboka and Broken Rice for homes, retailers, wholesalers and institutions.</p>
-    <div class="actions">
-      <a class="btn whatsapp" href="https://wa.me/254729547726?text=Hello%20JCM%20Enterprises%2C%20I%20want%20to%20order%20rice." target="_blank">💬 Order on WhatsApp</a>
-      <a class="btn light" href="#products">View Products →</a>
-    </div>
-  </div>
-  <div class="hero-art">
-    <div class="seal">🌾<strong>GENUINE<br>MWEA RICE</strong><small>QUALITY</small></div>
-    <div class="sack">🌾<br><b>JCM</b><br><small>ENTERPRISES</small></div>
-    <div class="bowl">🍚</div>
-  </div>
-</section>
-
-<section class="benefits">
-  <div>🌿 <b>Premium Quality</b><small>Carefully selected rice</small></div>
-  <div>🚚 <b>Reliable Supply</b><small>On time, every time</small></div>
-  <div>🛒 <b>Wholesale & Retail</b><small>For every customer</small></div>
-  <div>✓ <b>Trusted Service</b><small>Customer focused</small></div>
-</section>
-
-<section id="products" class="section">
-  <div class="section-title"><span>🌾</span><div><h2>Our Products</h2><p>Quality rice for every need</p></div><span>🌾</span></div>
-  <div class="products">
-    <article class="card">
-      <div class="rice-photo pishori">🍚</div><div class="card-body"><h3>Mwea Pishori Rice</h3><p>Aromatic, soft and tasty. A premium choice for family meals and special occasions.</p><ul><li>Premium quality</li><li>Aromatic & tasty</li><li>Ideal for family meals</li></ul><a class="order" data-product="Mwea Pishori Rice">Order on WhatsApp →</a></div>
-    </article>
-    <article class="card">
-      <div class="rice-photo komboka">🍚</div><div class="card-body"><h3>Komboka Rice</h3><p>Wholesome, nutritious and great value for money for homes and businesses.</p><ul><li>Quality grain</li><li>Nutritious</li><li>Great value</li></ul><a class="order" data-product="Komboka Rice">Order on WhatsApp →</a></div>
-    </article>
-    <article class="card">
-      <div class="rice-photo broken">🥣</div><div class="card-body"><h3>Broken Rice</h3><p>High-quality broken rice, suitable for porridge, cooking and other food uses.</p><ul><li>Affordable</li><li>Quality product</li><li>Versatile use</li></ul><a class="order" data-product="Broken Rice">Order on WhatsApp →</a></div>
-    </article>
-  </div>
-</section>
-
-<section id="about" class="about section">
-  <div class="about-art"><div class="field">🌾🌾🌾<br>🌾 🚜 🌾<br>🌾🌾🌾</div><div class="quote">“From our farms<br>to your table.”</div></div>
-  <div class="about-copy">
-    <span class="eyebrow">ABOUT JCM ENTERPRISES</span>
-    <h2>Your trusted rice partner in Mwea.</h2>
-    <p>JCM Enterprises is based at Mwea Rice Mills Ltd and is committed to supplying quality rice to customers in Mwea and beyond.</p>
-    <p>We focus on quality products, dependable supply and friendly customer service. Whether you need rice for your home, shop, wholesale business or institution, we are ready to serve you.</p>
-    <div class="mission"><b>Our Promise</b><span>Quality is our priority — from selection to delivery.</span></div>
-  </div>
-</section>
-
-<section class="why section">
-  <div class="section-title"><div><h2>Why Choose JCM Enterprises?</h2><p>Built around quality and customer satisfaction</p></div></div>
-  <div class="why-grid">
-    <div><i>🌾</i><h3>Genuine Mwea Rice</h3><p>Quality rice sourced and supplied from Mwea.</p></div>
-    <div><i>✓</i><h3>Quality Products</h3><p>Clean, well-selected rice you can trust.</p></div>
-    <div><i>🚚</i><h3>Reliable Supply</h3><p>Dependable service for repeat customers.</p></div>
-    <div><i>🛒</i><h3>Wholesale & Retail</h3><p>Flexible quantities for homes and businesses.</p></div>
-    <div><i>🤝</i><h3>Friendly Service</h3><p>We value every customer and every order.</p></div>
-  </div>
-</section>
-
-<section id="gallery" class="section gallery">
-  <div class="section-title"><div><h2>Our Gallery</h2><p>A glimpse of our rice and operations</p></div></div>
-  <div class="gallery-grid">
-    <div>🍚<span>Quality Rice</span></div><div>🌾<span>Mwea Rice Fields</span></div><div>🛍️<span>Rice Packaging</span></div>
-    <div>🌾<span>From Farm to Table</span></div><div>🍚<span>Fresh & Clean</span></div><div>🚜<span>Rice Farming</span></div>
-  </div>
-</section>
-
-<section id="contact" class="contact section">
-  <div class="contact-info">
-    <span class="eyebrow">GET IN TOUCH</span><h2>Ready to order?</h2>
-    <p>Call, WhatsApp or email us. We will be happy to assist you with your rice order.</p>
-    <div class="details">
-      <div>📍 <span><b>Visit Us</b><br>Mwea Rice Mills Ltd</span></div>
-      <div>📞 <span><b>Call Us</b><br><a href="tel:+254729547726">0729 547 726</a><br><a href="tel:+254794853246">0794 853 246</a></span></div>
-      <div>✉️ <span><b>Email Us</b><br><a href="mailto:mutemijames@gmail.com">mutemijames@gmail.com</a></span></div>
-      <div>🕐 <span><b>Business Hours</b><br>Mon–Sat: 8:00 AM–5:00 PM<br>Sunday: Closed</span></div>
-    </div>
-    <div class="actions"><a class="btn whatsapp" href="https://wa.me/254729547726?text=Hello%20JCM%20Enterprises%2C%20I%20would%20like%20to%20make%20an%20order." target="_blank">💬 Chat on WhatsApp</a></div>
-  </div>
-  <div class="map">
-    <iframe title="Map to Mwea Rice Mills Ltd" src="https://www.google.com/maps?q=Mwea%20Rice%20Mills%20Ltd&output=embed" loading="lazy"></iframe>
-  </div>
-</section>
-</main>
-
-<footer>
-  <div class="footer-main">
-    <img src="logo.svg" alt="JCM Enterprises">
-    <div><b>Quick Links</b><a href="#home">Home</a><a href="#about">About Us</a><a href="#products">Our Products</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
-    <div><b>Contact</b><span>Mwea Rice Mills Ltd</span><span>0729 547 726</span><span>0794 853 246</span><span>mutemijames@gmail.com</span></div>
-    <div><b>Order Online</b><span>Chat with us on WhatsApp</span><a class="btn whatsapp" href="https://wa.me/254729547726" target="_blank">WhatsApp Us</a></div>
-  </div>
-  <div class="copyright">© 2026 JCM Enterprises. All Rights Reserved. <span>Quality Rice. Reliable Supply. Trusted Service.</span></div>
-</footer>
-<script src="script.js"></script>
-</body>
-</html>
+<div class="top"><span>📍 Mwea Rice Mills Ltd</span><span>📞 0729 547 726 / 0794 853 246</span><span>✉ mutemijames@gmail.com</span></div>
+<nav><a class="logo" href="#">JCM <span>ENTERPRISES</span><small>QUALITY RICE • RELIABLE SUPPLY • TRUSTED SERVICE</small></a><div class="links"><a href="#about">About Us</a><a href="#products">Our Products</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a><a class="btn" href="https://wa.me/254729547726?text=Hello%20JCM%20Enterprises,%20I%20would%20like%20to%20order%20rice.">Order on WhatsApp</a></div></nav>
+<header class="hero"><div><span class="badge">🌾 Premium Mwea Rice for Every Home & Business</span><h1>JCM<br><span>ENTERPRISES</span></h1><h2>Quality Rice. Reliable Supply. Trusted Service.</h2><p>Your trusted source for high quality Mwea rice. We supply Pishori, Komboka and Broken rice, sourced from Mwea and processed to give you excellent taste, fragrance and quality.</p><a class="btn" href="https://wa.me/254729547726?text=Hello%20JCM%20Enterprises,%20I%20would%20like%20to%20order%20rice.">💬 Order on WhatsApp</a> <a class="btn alt" href="#products">View Products →</a></div><div class="heroimg"><div class="rice-art">🍚🌾</div><div class="seal">GENUINE<br>MWEA RICE<br>100% QUALITY</div></div></header>
+<div class="features"><div>🌿<b>Premium Quality</b></div><div>🚚<b>Reliable Supply</b></div><div>🏪<b>Wholesale & Retail</b></div><div>✓<b>Trusted Service</b></div></div>
+<section id="products"><div class="title"><h2>Our <span>Products</span></h2><p>High quality rice for households, retailers, wholesalers and institutions.</p></div><div class="products">
+<article class="card"><div class="pic"><div class="rice-art">🍚🌾</div></div><div class="cardbody"><h3>Mwea Pishori Rice</h3><p>Aromatic, soft and tasty — the best choice for your family.</p><ul class="ticks"><li>Aromatic</li><li>Soft & tasty</li><li>Premium quality</li><li>Ideal for family meals</li></ul><a class="btn" href="https://wa.me/254729547726?text=Hello%20JCM%20Enterprises,%20I%20want%20to%20order%20Mwea%20Pishori%20Rice.">Order on WhatsApp</a></div></article>
+<article class="card"><div class="pic"><div class="rice-art">🥣🌾</div></div><div class="cardbody"><h3>Komboka Rice</h3><p>Wholesome, nutritious and great value for money.</p><ul class="ticks"><li>Wholesome</li><li>Nutritious</li><li>Great value</li><li>Popular choice</li></ul><a class="btn" href="https://wa.me/254729547726?text=Hello%20JCM%20Enterprises,%20I%20want%20to%20order%20Komboka%20Rice.">Order on WhatsApp</a></div></article>
+<article class="card"><div class="pic"><div class="rice-art">🥄🍚</div></div><div class="cardbody"><h3>Broken Rice</h3><p>High quality broken rice, ideal for porridge and animal feed.</p><ul class="ticks"><li>High quality</li><li>Ideal for porridge</li><li>Animal feed</li><li>Affordable</li></ul><a class="btn" href="https://wa.me/254729547726?text=Hello%20JCM%20Enterprises,%20I%20want%20to%20order%20Broken%20Rice.">Order on WhatsApp</a></div></article>
+</div></section>
+<section id="about" class="about"><div class="title"><h2>About <span>Us</span></h2></div><div class="aboutgrid"><div class="aboutbox"><h3>From Mwea to Your Table 🌾</h3><p>JCM Enterprises is a rice business based at Mwea Rice Mills Ltd. We are committed to supplying high quality Mwea rice to our customers across Kenya.</p><p>We work with trusted farmers and processors to ensure our rice is clean, well-milled and of the best quality.</p><strong>Quality is our priority.</strong></div><div><h3 style="color:#1f6b3a">Why Choose JCM Enterprises?</h3><div class="why"><div>🌿 <b>Genuine Mwea Rice</b><br>Direct from Mwea</div><div>✓ <b>Quality Products</b><br>Clean, well-milled & fresh</div><div>🚚 <b>Reliable Supply</b><br>On time, every time</div><div>🏪 <b>Wholesale & Retail</b><br>Homes, shops & institutions</div><div>🎧 <b>Friendly Service</b><br>We value our customers</div></div></div></div></section>
+<div class="banner"><h2>“Good Rice, Better Life.”</h2><p>Fresh • Clean • Well Milled • Full of Taste</p></div>
+<section id="gallery"><div class="title"><h2>Our <span>Gallery</span></h2><p>A look at our rice, packing and operations.</p></div><div class="gallery"><div>🍚🌾</div><div>🥄🍚</div><div>🛍️🌾</div><div>🌱🌾</div><div>🏭📦</div><div>🌾🚜</div></div></section>
+<section id="contact" class="contact"><div class="title"><h2 style="color:#fff">Contact <span>Us</span></h2><p style="color:#dcebdd">We are here to serve you. Get in touch for orders and enquiries.</p></div><div class="contactgrid"><div class="contactbox"><h3>📍 Visit Us</h3><p>Mwea Rice Mills Ltd</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Mwea+Rice+Mills+Ltd">Open in Google Maps</a></div><div class="contactbox"><h3>📞 Call / WhatsApp</h3><p>0729 547 726<br>0794 853 246</p><a class="btn" href="https://wa.me/254729547726?text=Hello%20JCM%20Enterprises">Chat on WhatsApp</a></div><div class="contactbox"><h3>✉ Email Us</h3><p>mutemijames@gmail.com</p><h3>🕒 Business Hours</h3><p>Mon - Sat: 8:00 AM - 5:00 PM<br>Sunday: Closed</p></div></div></section>
+<footer><span><b>JCM ENTERPRISES</b> — Quality Rice. Reliable Supply. Trusted Service.</span><span>© 2026 JCM Enterprises. All Rights Reserved.</span></footer>
+</body></html>
