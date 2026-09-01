@@ -1,0 +1,2 @@
+const menu=document.querySelector('.menu');const nav=document.querySelector('.header nav');if(menu){menu.addEventListener('click',()=>{nav.classList.toggle('open')})}
+document.querySelectorAll('.order').forEach(btn=>btn.addEventListener('click',()=>{const product=btn.dataset.product;const text=encodeURIComponent(`Hello JCM Enterprises, I would like to order ${product}. Please share the available quantities and prices.`);window.open(`https://wa.me/254729547726?text=${text}`,'_blank')}));
